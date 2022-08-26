@@ -1,0 +1,37 @@
+#search{
+    color:aqua;
+    background:white;
+    border-color: aqua;
+    width: 140px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    
+
+
+
+}
+
+
+
+
+#plus{
+    border-radius:100%;
+    color:white;
+    background-color: aqua;
+    border-color: aqua;
+    width:40px;
+    height: 40px;
+    font-size: 30px;
+}
+
+#account{
+    color:white;
+    background-color: rgb(50, 50, 128);
+    border-color: black;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    
+}
