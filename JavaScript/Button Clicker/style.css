@@ -1,0 +1,88 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.right-section,
+.meaning {
+  border: 2px  black solid;
+}
+
+header {
+  width: 90%;
+  height: 100px;
+  margin: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: gray;
+}
+
+header > button {
+  background-color: rgb(60, 60, 170);
+  width: 80px;
+  height: 40px;
+  color: white;
+  font-size: 20px;
+  box-shadow: 5px 5px black;
+}
+
+main {
+  width: 90%;
+  height: 400px;
+  margin: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-section {
+  width: 55%;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.meaning {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.meaning-word{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.meaning-paragraph{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.meaning-word > button {
+  width: 51px;
+  height: 20px;
+  background-color: rgb(199, 199, 81);
+  box-shadow: 3px 3px black;
+}
+
+.right-section {
+  width: 35%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center ;
+  padding: 5px 10px;
+}
+
+
+.right-section > button {
+  width: 100px;
+  height: 40px;
+  background-color: #7fa76e;
+  box-shadow: 3px 3px black;
+}
