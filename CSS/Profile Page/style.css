@@ -1,0 +1,45 @@
+.card {
+  width: 700px;
+  height: 400px;
+  background-color: rgb(77, 74, 74);
+  display: flex;
+  margin: auto;
+}
+button {
+  all: unset;
+  cursor: pointer;
+}
+h1 {
+  font-size: 20px;
+}
+h2 {
+  font-size: 15px;
+}
+#Todd {
+  width: 60px;
+  height: auto;
+}
+h2 {
+  font-size: 20px;
+}
+#Phill {
+  width: 60px;
+  height: auto;
+  margin: 200px;
+  /* margin-: 150px; */
+  justify-content: center;
+
+}
+#accept1 {
+  width: 40px;
+  height: auto;
+  size: 20px;
+  /* align-items: flex-start; */
+}
+#refuse1 {
+  width: 30px;
+  height: auto;
+  size: 20px;
+  margin: auto;
+  position: static;
+}

@@ -1,0 +1,40 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  display: flex;
+}
+img {
+  height: auto;
+}
+.container {
+  background-color: rgb(69, 69, 129);
+  width: 970px;
+  min-height: 500px;
+}
+
+.controls {
+  display: flex;
+  padding: 1rem 0;
+  justify-content: space-between;
+}
+
+.search {
+  background-color: aqua;
+}
+input {
+  padding: 0.4rem;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.search button {
+  padding: 0.4rem;
+}
+
+ul.box-items {
+  display: table;
+  width: 100%;
+  text-align: center;
+}
