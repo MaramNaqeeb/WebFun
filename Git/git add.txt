@@ -1,0 +1,122 @@
+
+JC@DESKTOP-PR7CICB MINGW64 ~/Desktop
+$ mkdir test
+
+JC@DESKTOP-PR7CICB MINGW64 ~/Desktop
+$ cd test
+
+JC@DESKTOP-PR7CICB MINGW64 ~/Desktop/test
+$ touch
+touch: missing file operand
+Try 'touch --help' for more information.
+
+JC@DESKTOP-PR7CICB MINGW64 ~/Desktop/test
+$ touch index.html
+
+JC@DESKTOP-PR7CICB MINGW64 ~/Desktop/test
+$ touch style.css
+
+JC@DESKTOP-PR7CICB MINGW64 ~/Desktop/test
+$ ls
+index.html  style.css
+
+JC@DESKTOP-PR7CICB MINGW64 ~/Desktop/test
+$ git init
+Initialized empty Git repository in C:/Users/JC/Desktop/test/.git/
+
+JC@DESKTOP-PR7CICB MINGW64 ~/Desktop/test (master)
+$ git commit
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+JC@DESKTOP-PR7CICB MINGW64 ~/Desktop/test (master)
+$ git commit-m "first commit"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+JC@DESKTOP-PR7CICB MINGW64 ~/Desktop/test (master)
+$ git commit -m "first commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+JC@DESKTOP-PR7CICB MINGW64 ~/Desktop/test (master)
+$ git add .
+
+JC@DESKTOP-PR7CICB MINGW64 ~/Desktop/test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   style.css
+
+
+JC@DESKTOP-PR7CICB MINGW64 ~/Desktop/test (master)
+$ ^C
+
+JC@DESKTOP-PR7CICB MINGW64 ~/Desktop/test (master)
+$ git commit -m "first commit"
+[master (root-commit) 5520253] first commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 style.css
+
+JC@DESKTOP-PR7CICB MINGW64 ~/Desktop/test (master)
+$ git push master origin
+error: src refspec origin does not match any
+error: failed to push some refs to 'master'
+
+JC@DESKTOP-PR7CICB MINGW64 ~/Desktop/test (master)
+$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+JC@DESKTOP-PR7CICB MINGW64 ~/Desktop/test (master)
+$ ^[[200~git remote add origin https://github.com/MaramNaqeeb/Test1.git~
+bash: $'\E[200~git': command not found
+
+JC@DESKTOP-PR7CICB MINGW64 ~/Desktop/test (master)
+$ git remote add origin https://github.com/MaramNaqeeb/Test1.git
+
+JC@DESKTOP-PR7CICB MINGW64 ~/Desktop/test (master)
+$ git remote -v
+origin  https://github.com/MaramNaqeeb/Test1.git (fetch)
+origin  https://github.com/MaramNaqeeb/Test1.git (push)
+
+JC@DESKTOP-PR7CICB MINGW64 ~/Desktop/test (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 230 bytes | 230.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/MaramNaqeeb/Test1.git
+ * [new branch]      master -> master
+
+JC@DESKTOP-PR7CICB MINGW64 ~/Desktop/test (master)
+$
