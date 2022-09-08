@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>DojoWhether</h1>
+        <div>
+            <ul>
+                <li onclick="myFunction()"><a href="">Burbank</a> </li>
+                <li onclick="myFunction()"><a href="">Chicago</a> </li>
+                <li onclick="myFunction()"><a href="">Dallas</a> </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="page-head">
+            <h2>San Jose</h2>
+            <div class="options">
+                <label for="text">show temperature in</label>
+                <select name="degrees" onchange="temperature(this.value)">
+                    <option value="c">°C</option>
+                    <option value="f">°F</option>
+                </select>
+            </div>
+        </section>
+        <aside class="temperature">
+            <div class="col">
+                <h2>Today</h2>
+                <img src="assets\some_rain.png" alt="rain" />
+                <div class="situation">
+                    <span>some rains</span>
+                </div>
+                <div id="day0" class="day-temp">
+                    <span class="hot maram">24</span>
+                    <span class="cold maram">18</span>
+                </div>
+            </div>
+            <div class="col">
+                <h2>Tomorrow</h2>
+                <img src="assets\some_sun.png" alt="sun" />
+                <div class="situation">
+                    <span>some sun</span>
+                </div>
+                <div id="day1" class="day-temp">
+                    <span class="hot maram">27</span>
+                    <span class="cold maram">19</span>
+                </div>
+            </div>
+            <div class="col">
+                <h2>Friday</h2>
+                <img src="assets\some_clouds.png" alt="clouds" />
+                <div class="situation">
+                    <span>some clouds</span>
+                </div>
+                <div id="day2" class="day-temp">
+                    <span class="hot maram">21</span>
+                    <span class="cold maram">16</span>
+                </div>
+            </div>
+            <div class="col">
+                <h2>Saturday</h2>
+                <img src="assets\some_sun.png" alt="sun" />
+                <div class="situation">
+                    <span>some sun</span>
+                </div>
+                <div id="day3" class="day-temp">
+                    <span class="hot maram">26</span>
+                    <span class="cold maram">21</span>
+                </div>
+            </div>
+        </aside>
+
+    </main>
+    <footer>
+        <div>
+            <img src="assets\cookie.png" alt="cookie">
+        </div>
+        <div>
+            <h3>Stop Coocki time</h3>
+            <p>We use cookies (sadly not the edible ones)to personalize
+                <br>
+                content and ads, to provide social media features and to
+                <br>
+                analyse our traffic.<a href="#">Read more</a>
+            </p>
+        </div>
+        <div>
+            <!-- <button>I Accept</button> -->
+            <button onclick="hide()">I Accept</button>
+        </div>
+    </footer>
+    <script src="weather.js"></script>
+
+</body>
+
+</html>
